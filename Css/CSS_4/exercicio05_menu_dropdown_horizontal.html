@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Curso de CSS - Menu Vertical</title>
+		<style>
+            body {
+                font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+                font-size:13px;
+                margin:0;padding:0;
+            }
+
+            #menu {
+                width: 600px;
+                margin: 0 auto;
+            }
+
+            #menu ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+
+            #menu ul li {
+                float: left;
+                position: relative;
+            }
+
+            /* Menu horizontal principal */
+            #menu ul li a {
+                display: inline-block;
+                text-decoration: none;
+                color: darkcyan;
+                background: #fff;
+                padding: 5px 10px;
+                border: 1px solid darkgray;               
+                margin-right: -5px;
+                width: 100px;
+            }
+
+            /* Submenu */
+            #menu ul li ul {
+                display: none;
+                position: absolute;
+                padding-top: 5px;
+            }
+
+            /* Itens do submenu */
+            #menu ul li ul li a {
+                width: 100px;
+                margin-top: -1px;
+            }
+
+            #menu ul li ul li a:hover  {
+                background-color: #ddd;
+            }
+
+            /* PULO DO GATO!!  Faz aparecer o menu */
+            #menu li:hover ul {
+                display: block;
+            }
+
+            /* Alterar a cor de background dos itens do menu */
+            #menu ul li a:hover {
+                background-color: #ddd;
+            }
+
+        </style>
+
+    </head>
+    
+    <body>
+        <nav id="menu">
+            <ul> 
+
+                <li><a href="#">Brasil</a> 
+                        <ul> 
+                            <li><a href="#">Recife</a></li> 
+                            <li><a href="#">Sao Paulo</a></li>                         
+                            <li><a href="#">Rio de Janeiro</a></li> 
+                            <li><a href="#">Belo Horizonte</a></li> 
+                            <li><a href="#">Curitiba</a></li> 
+                        </ul> 
+                </li>
+
+                <li><a href="#">Portugal</a> 
+                        <ul> 
+                            <li><a href="#">Lisboa</a></li> 
+                            <li><a href="#">Porto</a></li> 
+                            <li><a href="#">Braga</a></li> 
+                        </ul> 
+                </li> 
+
+                <li><a href="#">Angola</a> 
+                        <ul> 
+                            <li><a href="#">Luanda</a></li> 
+                            <li><a href="#">Benguela</a></li> 
+                            <li><a href="#">Namibe</a></li> 
+                            <li><a href="#">Menongue</a></li> 
+                            <li><a href="#">Soyo</a></li> 
+                        </ul> 
+                </li>
+
+                <li><a href="#">Moçambique</a>         
+                        <ul> 
+                            <li><a href="#">Mamuto</a></li> 
+                            <li><a href="#">Matola</a></li> 
+                            <li><a href="#">Beira</a></li> 
+                            <li><a href="#">Nampula</a></li> 
+                        </ul> 
+                </li> 
+
+                <li><a href="#">Cabo Verde</a>         
+                        <ul> 
+                            <li><a href="#">Praia</a></li> 
+                            <li><a href="#">Mindelo</a></li> 
+                            <li><a href="#">Mosteiros</a></li> 
+
+                        </ul> 
+                </li>             
+
+            </ul>
+        </nav>
+
+    </body>
+</html>

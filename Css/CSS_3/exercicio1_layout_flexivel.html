@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Curso de CSS</title>
+        
+        <style>
+            html, body {
+                margin:0;
+                padding:0;
+            }
+
+            html {
+                background:rgb(229,229,229);
+            }
+
+            article, aside, section, header, footer, nav {
+                display:block;
+            }
+
+            main {
+                width:75%;
+                margin:10px auto;
+                box-shadow:0 0 10px #999999;
+                background-color:rgb(255,255,255);
+                font-size:13px;
+                min-width: 960px;
+            }
+
+            header {
+                width:100%;
+                height:110px;
+                background-color:rgb(255,127,0);
+                background-color:rgb(12,4,1);
+                background-image:url(imagens/topo.jpg);
+                background-repeat:no-repeat;		
+            }
+
+            nav {
+                width:100%;
+                height:40px;
+                background-color:rgb(12,4,1);
+            }
+
+            nav a {
+                float:left;
+                font-family: Georgia, "Times New Roman", Times, serif;
+                font-style: italic;
+                color: #FC9;
+                text-decoration: none;
+                padding:5px 2%;
+                margin-top: 5px;
+                font-size: 100%;
+                text-align: center;
+            }
+
+            .conteudo {
+                float:left;
+                width:66.66%;
+                height:350px;
+                background-color:rgb(255,210,77);
+                margin-top:10px;
+                margin-bottom:20px;
+            }
+
+            .apoio {
+                float:right;
+                width:32.29%;
+                height:350px;
+                background-color:rgb(221,221,221);
+                margin-top:10px;
+            }
+
+            footer {
+                clear:both;
+                width:100%;
+                height:60px;
+                background-color:rgb(153,153,153);
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <header></header>
+            <nav>
+                <a href="inicial/index.html">Home</a> 
+                <a href="inicial/aboutus.html">About us</a>
+                <a href="inicial/menu.html">Menu</a> 
+                <a href="inicial/specialevents.html">Special Events</a>
+                <a href="inicial/dvd.html">DVD</a>
+                <a href="inicial/fotos.html">Photos</a>
+                <a href="inicial/recipes.html">Recipes</a>
+                <a href="inicial/review.html">Restaurant Review</a>
+            </nav>
+
+            <section class="conteudo"></section>
+            <section class="apoio"></section>
+
+            <footer></footer>
+        </main>
+    </body>
+</html>

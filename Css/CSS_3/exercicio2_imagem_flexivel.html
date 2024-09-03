@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Curso de CSS</title>
+        
+        <style>
+            html, body {
+                margin:0;
+                padding:0;
+            }
+
+            html {
+                background:rgb(229,229,229);
+            }
+
+            article, aside, section, header, footer, nav {
+                display:block;
+            }
+
+            main {
+                width:75%;
+                margin:10px auto;
+                box-shadow:0 0 10px #999999;
+                background-color:rgb(255,255,255);
+                font-size:14px;
+                min-width:960px;
+            }
+
+            header {
+                width:100%;
+                height:110px;
+                background-color:rgb(255,127,0);
+                background-color:rgb(12,4,1);
+                background-image:url(imagens/topo.jpg);
+                background-repeat:no-repeat;		
+            }
+
+            nav {
+                width:100%;
+                height:32px;
+                background-color:rgb(12,4,1);
+            }
+
+            nav a {
+                float:left;
+                font-family: Georgia, "Times New Roman", Times, serif;
+                font-style: italic;
+                color: #FC9;
+                text-decoration: none;
+                padding:5px 2%;
+                font-size: 100%;
+                text-align: center;
+            }
+
+            .conteudo {
+                float:left;
+                width:62%;
+                background-color:rgb(255,255,204);
+                margin-top:10px;
+                margin-bottom:20px;
+                padding:0 2%;
+            }
+
+            .conteudo h1, .conteudo h2 {
+                font-family:Georgia, "Times New Roman", Times, serif;
+                font-style:italic;
+                color:rgb(153,102,51);
+                margin:10px 0;
+            }
+
+            .conteudo h1 { font-size:250% }
+            .conteudo h2 { font-size:200%; margin-top:20px }
+
+            .conteudo p {
+                font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+                line-height:200%;
+                margin:0;padding:0;
+            }
+
+            .conteudo img {
+                float:left;
+                margin-right:10px;
+            }
+
+            .apoio {
+                float:right;
+                width:32%;
+                height:500px;
+                background-color:rgb(221,221,221);
+                margin-top:10px;
+            }
+
+            footer {
+                clear:both;
+                width:100%;
+                height:60px;
+                background-color:rgb(153,153,153);
+            }
+
+        </style>
+
+
+    </head>
+
+    <body>
+        <main>
+            <header></header>
+            <nav>
+                <a href="inicial/index.html">Home</a> 
+                <a href="inicial/aboutus.html">About us</a>
+                <a href="inicial/menu.html">Menu</a> 
+                <a href="inicial/specialevents.html">Special Events</a>
+                <a href="inicial/dvd.html">DVD</a>
+                <a href="inicial/fotos.html">Photos</a>
+                <a href="inicial/recipes.html">Recipes</a>
+                <a href="inicial/review.html">Restaurant Review</a>
+            </nav>
+
+            <section class="conteudo">
+              <h1>Cafe Fontenebleau welcomes you</h1>
+              <p>Cafe Fontenebleau's visionary chef leads the way in a culinary revolution. Proclaimed by many to be the best chef in the world today, Chef Fontenelle blends earthy seasonal flavors and bold ingredients to create exquisite contemporary cuisine.</p>
+              <p>The name Cafe Fontenebleau comes from our first restaurant, located in a historic building on Thouiu Street in Paris, where we opened the doors in 1985. We've replicated the elegant interior, exceptional service, and world-class cuisine in our restaurants around the country.</p>
+              <h2>Come dine with us tonight</h2>
+              <p><img src="imagens/romantic_dining.jpg" width="255" height="255" alt="foto casal">Cafe Fontenebleau features a magical combination of excellent cuisine and musical entertainment. The finest pasta, seafood, veal and certified Angus steaks are served to you by the most talented waiters anywhere. Nightly entertainment features favorites from Broadway musical theatre, Grand Opera, and Neapolitan folk songs performed by our talented musical staff. Cafe Fontenebleau offers the largest selection of Italian wines in California, and is the proud recipient of numerous awards from Wine Tasting Magazine. We were selected as one of Paris Magazine's top 200 restaurants for the last 8 years!</p>
+              <p>Cafe Fontenebleau restaurant is music to your ears, be it an intimate dinner for 2 or a banquet for up to 200.</p>
+              <h2>Special Events</h2>
+              <p>We want to share the elegant private dining room at the Cafe Fontenebleau flagship restaurant with you! Set in a unique, historic building in Paris, our private dining room is available to host your corporate events, parties, weddings, and more.</p>
+              <p>Our special events manager, sommelier, and executive chef will work with you to make sure your special event is truly special. We offer multiple menu options, or we can customize a menu for you. In keeping with the award-winning cuisine and exceptional service you expect, we provide place cards, personally printed menus, and candles. We are also happy to help you arrange other services.</p>
+              <p>Our unique setting, highly personalized service, and memorable dining are the perfect combination for your special event! Please contact us for more information!</p>
+
+            </section>
+            <section class="apoio"></section>
+
+            <footer></footer>
+        </main>
+    </body>
+</html>
