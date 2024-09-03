@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Curso HTML5 Essencial</title>
+        
+        <link href="estilo.css" rel="stylesheet" media="screen">
+
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        
+        <h2>Formulário</h2>
+        
+        <form action="" method="post">  
+            
+            <input type="text" name="name" id="name" size="30" maxlength="100" required placeholder="insira seu nome">  
+
+            
+            <input type="tel" name="telefone" id="telefone" size="30" maxlength="100" placeholder="insira seu telefone">  
+
+            
+            <input type="email" name="email" id="email" size="30" maxlength="100" placeholder="insira seu email">
+        
+            
+            <input type="url" name="website" id="website" size="30" maxlength="100" placeholder="insira a url">
+
+            <label for="aniversario">Data de Nascimento</label>
+            <input type="date" name="aniversario" id="aniversario" size="30" required>
+
+            <input type="submit" value="Enviar" id="enviar" name="enviar">
+
+            <input type="text" list="lojas" name="nome_loja" id="nome_loja" placeholder="Digite o Nome da Loja" size="40">
+
+            <datalist id="lojas">
+                <option value="Americanas">Americanas</option>
+                <option value="Gucci">Gucci</option>
+                <option value="Burguer King">Burguer King</option>
+                <option value="McDonalds">McDonalds</option>
+                <option value="Magazine Luiza">Magazine Luiza</option>
+                <option value="Centro Otico">Centro Otico</option>
+                <option value="Centr    o Automotivo">Centro Automotivo</option>
+                <option value="Centro de Beleza">Centro de Beleza</option>
+                <option value="Centauro">Centauro</option>
+            </datalist>
+
+
+            <input type="range" id="filhos" min="1" max="10" value="1" onchange="mostrarResultado()">
+            <span id="resultado"></span>
+
+
+            <input type="color" name="cor" id="cor">
+            
+            <input type="search" name="pesquisar">
+        </form>
+    </body>
+</html>
