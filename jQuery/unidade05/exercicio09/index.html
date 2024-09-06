@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cafe Fontenebleu</title>
+        
+		<style>
+            body { background-color:#F6F6F6 }
+            
+            #principal { width:955px; margin:-1px auto 10px; border:1px solid #ddd; background-color:#FFF; font-family:Arial, Helvetica, sans-serif }
+           
+		    h1, h2, h3, h4, h5, h6 { font-family:Georgia, "Times New Roman", Times, serif; color:#C63; font-style:italic; letter-spacing:-0.05em }
+		   
+		    header { width:955px; height:95px }
+            #principal > header h1 { display:none }
+			
+            nav { width: 955px; background-color: #1F0B04 }
+			nav > h1 { display:none }
+            nav ul { list-style:none; margin:0; padding:4px }
+            nav ul li { display:inline-block }
+            nav ul li a {
+				font-size: 1em;
+				text-decoration: none;
+				color: #FFF;
+				padding: 4px 20px;
+				font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+			}
+            nav ul li a:hover { background-color: #62260A }
+            
+            article { float:left; margin:30px 20px; width:600px }
+			article header hgroup h1 { margin:0 } 
+			article header hgroup h5 { margin:0; font-size:1.1em; color:#ccc }
+			
+			article aside { float:left; width:120px; border-top:1px #CC6633 solid; border-bottom:1px #CC6633 solid; padding:40px 10px 0; margin-right:20px; margin-bottom:20px; background:url(imagens/aspas.gif) no-repeat;  }
+            aside p { color:#999; } 
+			
+			section.opcoes_cardapio { clear:left; }
+			section.fotos_apoio h2 { font-size:1.2em; color:#FC3; letter-spacing:-0.05em; margin-bottom:0 }
+				
+            footer { clear:both; width:700px; margin:0 auto; font-size:0.75em; text-align:center; background-color:#ECECEC; padding:5px }
+			
+			#seta_up { 
+				position:fixed;
+				margin-top:-100px;
+				margin-left:-100px;
+				top:100%;
+				left:100%;
+				cursor:pointer;
+			}
+           
+            h1 { font-size:2.6em; margin:0 5px; }
+            h4 { font-size:1.6em; margin:0 5px; }
+            p, li { font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:0.9em; color:#555; line-height:1.8 }
+        </style>  
+        
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script>
+			$(function() {
+				$('#seta_up').hide();
+				
+				$(window).scroll(function(e) {
+                    if($(this).scrollTop() > 150) {
+						$('#seta_up').fadeIn(300)	
+					}
+					if($(this).scrollTop() < 150 ) {
+						$('#seta_up').fadeOut(300);	
+					}
+                });
+				
+				$('#seta_up').click(function(e) {
+                    $("html, body").animate({scrollTop:0 }, 1000);	
+                });
+				
+			})
+		
+		</script>      
+    
+    </head>
+
+    <body>
+    
+    	<div id="principal">
+            <header>
+            	<h1>Cafe Fontenebleau - Review</h1>
+                <img src="imagens/topo_principal.jpg">
+            </header>
+        
+            <nav>
+                <h1>Navegacao</h1>
+                <ul>
+                  <li><a href="home.html">Home</a></li>
+                  <li><a href="info.html">Info</a></li>
+                  <li><a href="special-events.html">Special Events</a></li>
+                  <li><a href="dvd.html">DVD</a></li>
+                  <li><a href="location.htm">Location</a></li>
+                  <li><a href="menu.html">Menu</a></li>
+                  <li><a href="review.html">Review</a></li>
+              	</ul>
+            </nav>
+            
+            <article>
+                <header>
+                    <hgroup>
+                        <h1>Restaurant Review</h1>
+                        <h5>Leading experts talk about the restaurant</h5>
+                    </hgroup>
+                </header>
+                
+                <p>Francesco and Jane Bienni, founders and owners of San Francisco's world-class restaurant, have many reasons to celebrate. Cafe Townsend has been a San Francisco favorite for more than 19 years, and their latest restaurant venture, Cafe Isabella, will soon expand to more locations. Their biggest celebration is for their son Steven's recent graduation from New York's highly acclaimed Culinary Institute of America. </p> 
+                
+                <aside>
+                    <h3>Opiniao</h3>
+                    <p>&quot;What I am doing is using seasonal Italian ingredients and combining them to create
+                    dishes with a modern flair that will invigorate our customers' palates,&quot; Steven says.</p>
+                </aside>
+                
+                <p>San Francisco diners should join the Bienni's in their celebration because this graduation means an even better menu selection at Cafe Townsend, as Steven is lending his modern and innovative culinary talents to his father's traditional, Old World kitchen.</p>            
+                <p> &quot;The utilization of regional seafood with the accompaniment of our fresh-grown herbs is something I'm avid about.&quot;</p>
+                <p>Those who have enjoyed Cafe Townsend and its world-class cuisine shouldn't worry - the stellar tableside service, scrumptious regional specials and menu favorites remain. But Steven's latest menu additions are something you don't want to miss.</p>
+        
+                <section class="opcoes_cardapio">
+                    <h4>Appetizer</h4>
+                    <ul>
+                        <li>Prosciutto di Parma con Insalata Miele - Thinly sliced cured Italian ham with julienne of apples with frisee in a red wine poppy seed vinaigrette, garnished with goat's cheese crostini.</li>
+                        <li>Salmone, Pecorino e Rucola - Smoked salmon with goat's cheese and arugola</li>
+                    </ul>
+                </section>
+        
+                <section class="opcoes_cardapio">
+                    <h4>Pasta</h4>
+                    <ul>
+                        <li>Penne con Pomodoro Fresco e Provolone - Quill-shaped pasta with tomato sauce, garlic, fresh basil and provolone cheese</li>
+                        <li>Orechiette alla Panorama - &quot;Little ears&quot; of pasta with calamari and tiger shrimp in a light tomato sauce with olive oil</li>
+                        <li>Gnocchi al Forno con Salsiccia - Homemade pillows of potato and ricotta gnocchi in a hearty tomato sauce with sweet Italian sausage and pork shoulder, baked with fresh mozzarella</li>
+                    </ul>
+                </section>
+                
+                <section class="opcoes_cardapio">
+                    <h4>Main Course</h4>
+                    <ul>
+                        <li>Pollo Farcito con Fontina e Prosciutto - Boneless breast of chicken stuffed with fontina cheese and prosciutto in white wine</li>
+                        <li>Pollo alla Zenzero - Semi-boneless half of chicken sauteed with garlic, rosemary, mustard and sage in a fresh ginger-spiked sauce</li>
+                        <li>Vitello Dolce Bacio - Veal medallions sauteed with mixed mushrooms in a marsala wine sauce with a touch of cream and chopped tomato, crowned with a jumbo shrimp</li>
+                    </ul>
+                </section>
+                
+            </article>
+            
+            <aside>
+                <section class="fotos_apoio">
+                    <h2>Map</h2>
+                    <img src="imagens/mapa_como_chegar.gif" width="273" height="264" />
+                </section>
+                
+                <section class="fotos_apoio">
+                    <h2>Photos</h2>
+                    <img src="imagens/fotos.jpg" width="275" height="165" />
+                </section>
+                
+                <section class="fotos_apoio">
+                    <h2>Wine</h2>
+                    <img src="imagens/vinhos.jpg" width="275" height="163" />    
+                </section>
+            </aside>
+            
+            <footer>Cafe Fontenebleu - Rua Ernesto de Paula Santos, 187 Sala 506 - Recife-PE</footer>
+    	</div>
+		<div id="seta_up"><img src="imagens/seta_cima.png"></div>
+                
+    </body>
+
+</html>

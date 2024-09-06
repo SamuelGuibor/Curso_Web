@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso jQuery Fundamental</title>
+        
+        <script src="jquery-3.2.1.min.js"></script>
+        <script>
+			$( function(e) {
+
+                $("h1").html("Formação de Desenvolvimento Web Completo");
+
+                $("ul#listacursos").prepend("<li>Curso de Bootstrap </li>");
+                $("ul#listacursos").append("<li>Curso de PHP </li>");
+			} )
+		</script>
+        
+    </head>
+
+    <body>
+    	<h1></h1>
+    
+		<ul id="listacursos">
+            <li>Curso HTML5 Essencial</li>
+            <li>Curso CSS3 Essencial</li>
+            <li>Curso Javascript Essencial</li>
+            <li>Curso jQuery Fundamental</li>
+        </ul>
+
+    </body>
+
+</html>

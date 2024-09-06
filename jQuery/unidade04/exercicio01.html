@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso jQuery Fundamental</title>
+        
+        <style>
+			ul		{ margin:0; padding:0; list-style:none }
+			li		{ display:inline-block; margin-right:10px }
+		</style>
+        
+        <script src="jquery-3.2.1.min.js"></script>
+        <script>
+			$( function(e) {
+                $("<li><img src='imagem/foto4.jpg'></li>").insertAfter("li:last-child");
+			} )
+		
+		</script>
+        
+    </head>
+
+    <body>
+		<ul>
+        	<li><img src="imagem/foto1.jpg"></li>
+            <li><img src="imagem/foto2.jpg"></li>
+            <li><img src="imagem/foto3.jpg"></li>
+            
+        </ul>
+
+    </body>
+
+</html>

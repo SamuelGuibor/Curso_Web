@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso jQuery Fundamental</title>
+        <style>
+			#janela { position:absolute; top:20px; left:50px; width:200px; height:200px; background-color:#069; border:5px solid #000; padding:0 10px; }
+		</style>
+        
+        <script src="jquery-3.2.1.min.js"></script>
+        <script>
+			$(function(e) {
+                console.log('Posição top do elemento: ' + $('#janela').position().top);
+                console.log('Posição top do elemento: ' + $('#janela').position().left);
+			});
+		</script>        
+    </head>
+
+    <body>
+		
+        <div id="janela">
+        
+        </div>
+
+    </body>
+
+</html>

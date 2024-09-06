@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso jQuery Fundamental</title>
+        
+        <script src="jquery-3.2.1.min.js"></script>
+        <script>
+            $(function (e) {
+                $('#cursohtml').click( function(e) {
+                    alert("Clicou no botao HTML");
+                });
+
+                function mostrarMensagem (){
+                    alert("Passou o mouse por cima do botao css");
+                    $('#cursocss').off("mousehover", mostrarMensagem);
+                  }
+
+                  function mostrarMensagem2 (){
+                    alert("cliclou no botao css");
+                  }
+
+                  $('#curso css').on("mousehover",mostrarMensagem);
+                  $('#curso css').on("click",mostrarMensagem2);
+  
+              });
+		</script>        
+    </head>
+
+    <body>
+        <input type="button" id="cursohtml" value="Curso HTML5" />
+        <input type="button" id="cursocss" 	value="Curso CSS3" />
+        
+        
+    </body>
+
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso jQuery Fundamental</title>
+		<style>
+			body { margin:0; padding:0; }
+            nav {
+				position:fixed;
+				width:78px;
+				padding:1px;
+				top:10px;
+				left:10px;
+				box-shadow:0 0 5px #000;
+				background-color:#000;
+				z-index:3;	
+			}
+			
+			nav ul { margin:0; padding:0; list-style:none }
+			nav li { 
+				list-style-type:none; width:78px; height:78px;
+			 	background-repeat:no-repeat; margin-bottom:1px;
+				cursor:pointer;
+			}
+			
+			nav li:first-child 	{ background-image:url(imagem/futebol.png) } 
+			nav li:nth-child(2) { background-image:url(imagem/basquete.png) } 
+			
+			#primeira			{ width:300px; height:800px; background-color:#066 }
+			#segunda			{ width:300px; height:800px; background-color:#933 }
+					
+        </style>
+         
+        <script src="jquery-3.2.1.min.js"></script>
+        <script>		
+			$( function(e) { 	
+				$('nav li:nth-child(2)').click(function(e) {
+                    $('html, body').animate( { scrollTop: $('#segunda').offset().top } , 1000 );
+                });
+			});			
+		</script>   
+    </head>
+    <body>
+		<nav>
+        	<ul>
+            	<li id="tela1"></li>
+            	<li id="tela2"></li>
+            </ul>
+        </nav>
+        
+        <div id="primeira"></div>
+        <div id="segunda"></div>
+    </body>
+</html>
