@@ -1,0 +1,9 @@
+div.carousel-inner {
+    max-height: 550px;
+}
+
+@media (min-widht:1170px) {
+    div.carousel-inner {
+        max-height: 700px;
+    }
+}
