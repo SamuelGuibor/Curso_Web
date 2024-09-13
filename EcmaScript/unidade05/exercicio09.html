@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Curso de EcmaScript 6.0</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser-polyfill.js"></script>
+
+        <script type="text/babel">
+        
+            function* baterNoLiquidificador(ing) { 
+                for ( var i=0; i<ing.length; i++){
+                    yield ing[i];
+                }
+
+             }  
+
+            var ingredientes = baterNoLiquidificador(["Leite","Banana","Nescau", "Aveia"]);
+
+            var fazerVitamina = setInterval( function() {
+                var vitamina = ingredientes.next();
+                if (vitamina.done) {
+                    clearInterval(fazerVitamina);
+                    console.log("Acabou, Sua vitamina está pronta!");
+                } else {
+                    console.log(vitamina.value)
+                }
+            }, 1000)
+
+        </script>
+    </head>
+    <body>
+    
+    </body>
+</html>
