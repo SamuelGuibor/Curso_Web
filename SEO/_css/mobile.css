@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+header {
+	background-color: #1f0c04;
+	height: 95px;
+	width: 100%;
+	background-image: url(imagens/topo_mobile_320.jpg);
+	background-repeat: no-repeat;
+	background-position:top center;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #F1F1E5;
+}
+
+nav#menu_desktop {
+	display:none;	
+}
+
+nav#menu_mobile {
+	display:block;
+	clear:both;
+	background-color: #0C0401;
+	width: 100%;
+}
+nav#menu_mobile ul {
+	width: 100%;
+	margin:0 auto;
+	padding: 4px;
+	list-style-type: none;
+}
+nav#menu_mobile ul li {
+	width:100%;
+}
+nav#menu_mobile ul li a {
+	display:block;
+	font-style: italic;
+	font-size: 0.9em;
+	color: #FC9;
+	text-decoration: none;
+	padding: 4px 20px;
+	font-family: Georgia, "Times New Roman";
+	text-align:center;
+}
+nav ul li a:hover {
+	background-color: #b4531A;
+}
+
+#principal {
+	margin: 5px auto 20px;
+	width: 100%;
+}
+article {
+	margin: 30px 20px;
+	float: left;
+	width: 90%;
+}
+aside {
+	display:none;
+}
+footer {
+	clear:both;
+	background-image: url(imagens/rodape_mobile_320.png);
+	background-repeat: no-repeat;
+	margin: 0px auto;
+	height: 300px;
+	width: 100%;
+}
+
+section {
+	margin-bottom: 15px;
+}

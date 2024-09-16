@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+header {
+	background-color: #1f0c04;
+	height: 95px;
+	width: 100%;
+	background-image: url(imagens/topo_principal.jpg);
+	background-repeat: no-repeat;
+	background-position:top center;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #F1F1E5;
+}
+
+nav#menu_mobile {
+	display:none;
+}
+
+nav#menu_desktop {
+	display:block;
+	background-color: #0C0401;
+	width: 100%;
+}
+nav#menu_desktop ul {
+	width: 955px;
+	margin:0 auto;
+	padding: 4px;
+	list-style-type: none;
+}
+nav#menu_desktop ul li {
+	display: inline-block;
+}
+nav#menu_desktop ul li a {
+	font-style: italic;
+	font-size: 0.9em;
+	color: #FC9;
+	text-decoration: none;
+	padding: 4px 20px;
+	font-family: Georgia, "Times New Roman";
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+nav ul li a:hover {
+	background-color: #b4531A;
+}
+
+#principal {
+	margin: 5px auto 20px;
+	width: 955px;
+}
+article {
+	margin: 30px 20px;
+	float: left;
+	width: 600px;
+}
+aside {
+	float: right;
+	width: 300px;
+	margin-top: 30px;
+}
+footer {
+	clear:both;
+	background-image: url(imagens/rodape.png);
+	background-repeat: no-repeat;
+	margin: 0px auto;
+	height: 300px;
+	width: 955px;
+}section {
+	margin-bottom: 15px;
+}
+
+nav#menu_desktop ul li a:hover {
+	background-color: #b4531A;
+}
